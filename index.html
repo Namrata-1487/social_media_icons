@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Social Media Icon</title>
+    <script>
+
+        $(document).ready(function () {
+            $(".menubar").click(function () {
+                $(".facebook").show("Slow");
+                $(".twitter").show("slow");
+                $(".insta").show("slow");
+                $(".github").show("slow");
+                $(".menubar").css(
+                    "display", "none",
+                );
+                $(".close").css(
+                    "display", "block",
+                );
+                $(".menubar").css(
+                    "display", "none",
+                );
+            })
+            $(".close").click(function () {
+                $(".facebook").hide("Slow");
+                $(".twitter").hide("Slow");
+                $(".insta").hide("Slow");
+                $(".github").hide("Slow");
+                $(".menubar").css(
+                    "display", "none",
+                );
+                $(".menubar").css(
+                    "display", "block",
+                );
+                $(".close").css(
+                    "display", "none",
+                );
+            })
+        })
+    </script>
+</head>
+
+<body class="container">
+    <div class="icons">
+        <div class="menubar">
+            <i class="fa-solid fa-bars">
+            </i>
+        </div>
+        <div class="close">
+            <i class="fa-solid fa-close"></i>
+        </div>
+        <div class="facebook">
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa-brands fa-facebook fa-beat-fade"></i>
+            </a>
+        </div>
+        <div class="twitter">
+            <a href="https://www.twitter.com/" target="_blank">
+                <i class="fa-brands fa-x-twitter fa-beat-fade"></i>
+            </a>
+        </div>
+        <div class="insta">
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa-brands fa-instagram fa-beat-fade"></i>
+            </a>
+        </div>
+        <div class="github">
+            <a href="https://www.github.com/" target="_blank">
+                <i class="fa-brands fa-github fa-beat-fade"></i>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

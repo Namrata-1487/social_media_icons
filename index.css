@@ -1,0 +1,100 @@
+ body {
+     box-sizing: border-box;
+     height: 100vh;
+     display: block;
+     margin: auto;
+     background: white;
+ }
+
+ .container {
+     display: block;
+     margin: auto;
+     padding: 0;
+ }
+
+ .icons {
+     display: flex;
+     width: 100%;
+     height: 100%;
+     font-size: 50px;
+     justify-content: center;
+     align-items: center;
+     vertical-align: middle;
+ }
+
+ .icons div:nth-child(n+2) {
+     display: none;
+ }
+
+ .menubar {
+     position: absolute;
+     cursor: pointer;
+     display: flex;
+     flex-direction: column;
+     gap: 3px;
+     width: 3%;
+
+ }
+
+ .close {
+     cursor: pointer;
+     display: none;
+ }
+
+ /* .menubar span {
+     border: 4px solid black;
+     border-radius: 5px;
+ } */
+
+ @media screen and (min-width:768px) {
+
+     .facebook {
+         position: absolute;
+         top: 25%;
+     }
+
+     .twitter {
+         position: absolute;
+         left: 40%;
+     }
+
+     .insta {
+         position: absolute;
+         top: 60%;
+     }
+
+     .github {
+         position: absolute;
+         right: 40%;
+     }
+
+ }
+
+ @media screen and (max-width:768px) {
+
+     .facebook {
+         position: absolute;
+         top: 20%;
+     }
+
+     .twitter {
+         position: absolute;
+         left: 30%;
+     }
+
+     .insta {
+         position: absolute;
+         bottom: 20%;
+     }
+
+     .github {
+         position: absolute;
+         right: 30%;
+     }
+
+ }
+
+ a {
+     color: blue;
+ }
+
